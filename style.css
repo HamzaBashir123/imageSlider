@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgcolor : #85b6d8;
+    --border :  #1d91e4;
+}
+body{
+    background-color: aliceblue;
+}
+.mainContainr{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgShow{
+    width: 1000px;
+    height: 500px;
+    background-color: var(--bgcolor) ;
+    border: 5px solid var(--border);
+    border-radius: 10px;
+    position: relative;
+
+    
+}
+h1{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.imageContainer{
+    width: 100%;
+    height: 100%;
+}
+.btnAll{
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 140px;
+    display: flex;
+    position: relative;
+    
+}
+.btnNext{
+    border: none;
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0;
+    height: 100%;
+    color: #85b6d8;
+    font-size: x-large;
+    background-color: transparent;
+    
+}
+.btnPrev{
+    border: none;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 0;
+    height: 100%;
+    font-size: x-large;
+    color: #85b6d8;
+    background-color: transparent;
+
+}
+.btnNext:hover ,  .btnPrev:hover{
+    color: black;
+    cursor: pointer;
+}
+.btnNext:active ,  .btnPrev:active{
+    scale: 0.9;
+}
+.hidden{
+    display: none;
+}
